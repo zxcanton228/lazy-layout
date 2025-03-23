@@ -1,0 +1,25 @@
+{
+	"dep": [
+		"@prisma/client",
+		"argon2",
+		"cookie-parser",
+		"cors",
+		"dotenv",
+		"express",
+		"express-validator",
+		"jsonwebtoken",
+		"lodash",
+		"tsconfig-paths"
+	],
+	"devDep": [
+		"@types/cookie-parser",
+		"@types/cors",
+		"@types/express",
+		"@types/jsonwebtoken",
+		"@types/lodash",
+		"@types/node",
+		"prisma",
+		"ts-node-dev",
+		"typescript"
+	]
+}

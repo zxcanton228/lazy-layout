@@ -1,0 +1,5 @@
+{
+	"entry": ["src/main.ts"],
+	"project": ["src/**"],
+	"ignore": ["assets/**", "node_modules/**", "dist/**", ".dockerignore/**"]
+}

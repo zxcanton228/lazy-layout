@@ -1,0 +1,35 @@
+{
+	"dep": [
+		"@nestjs-modules/mailer",
+    "@nestjs/config",
+    "@nestjs/jwt",
+    "@nestjs/passport",
+    "@nestlab/google-recaptcha",
+    "@prisma/client",
+    "@react-email/components",
+    "@react-email/render",
+    "argon2",
+    "chalk",
+    "class-transformer",
+    "class-validator",
+    "compression",
+    "cookie-parser",
+    "helmet",
+    "nodemailer",
+    "passport",
+    "passport-github2",
+    "passport-google-oauth20",
+    "passport-jwt",
+    "prisma",
+    "react",
+    "react-email"
+	],
+	"devDep": [
+			"@types/cookie-parser",
+			"@types/passport-github2",
+			"@types/passport-google-oauth20",
+			"@types/passport-jwt",
+			"@typescript-eslint/parser",
+			"@types/dotenv"
+	]
+}

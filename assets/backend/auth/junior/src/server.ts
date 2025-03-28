@@ -2,13 +2,11 @@ import { PrismaClient } from '@prisma/client'
 import bodyParser from 'body-parser'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
-import * as dotenv from 'dotenv'
 import express, { Request, Response } from 'express'
 
+import 'dotenv/config'
 import { authRouter } from './controllers/auth.controller'
 import { userRouter } from './controllers/user.controller'
-
-dotenv.config()
 
 export const prisma = new PrismaClient()
 
@@ -23,7 +21,7 @@ async function main() {
 		cors({
 			origin: ['http://localhost:3000'],
 			credentials: true,
-			exposedHeaders: 'set-cookie'
+			exposedHeaders: 'set-cookie',
 		})
 	)
 
@@ -41,11 +39,10 @@ async function main() {
 }
 
 main()
-	.then(async () => {
-		await prisma.$connect()
-	})
 	.catch(async e => {
 		console.error(e)
-		await prisma.$disconnect()
 		process.exit(1)
+	})
+	.finally(async () => {
+		await prisma.$disconnect()
 	})

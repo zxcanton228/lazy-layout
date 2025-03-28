@@ -1,19 +1,4 @@
 {
-	"name": "lazy-layout",
-	"version": "1.0.0",
-	"main": "src/main.ts",
-	"license": "MIT",
-	"private": false,
-	"scripts": {
-		"start": "ts-node ./src/main.ts",
-		"build": "tsc",
-		"dev": "ts-node-dev --respawn --transpile-only --require tsconfig-paths/register --exit-child src/main.ts"
-	},
-	"engines": {
-		"node": ">=22.2.0",
-		"npm": ">=10.8.0",
-		"yarn": ">=1.22.19"
-	},
 	"devDependencies": {
 		"@types/fs-extra": "^11.0.4",
 		"@types/inquirer": "^9.0.7",
